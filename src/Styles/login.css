@@ -1,0 +1,79 @@
+.login {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+    padding: 3rem;
+}
+
+.login .left {
+    position: relative;
+    flex: 1.2;
+}
+
+.login .left__title {
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    color: darkcyan;
+}
+
+.login .left__desc {
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    color: green;
+}
+
+.login .left__register {
+    font-size: 2rem;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    color: darkblue;
+}
+
+.login .right {
+    flex: 1;
+    text-align: center;
+}
+
+.login .right__title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.login .right__desc {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.login .form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.login .form input {
+    padding: 1rem;
+    border: none;
+    border-bottom: 1px solid #bbb;
+    outline: none;
+}
+
+.login .form .btn {
+    margin-top: 3rem;
+}
+
+.login .form .btn button {
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    padding: 1rem 4rem;
+    background-color: dodgerblue;
+    border-radius: 100px;
+    color: #fff;
+    cursor: pointer;
+}
