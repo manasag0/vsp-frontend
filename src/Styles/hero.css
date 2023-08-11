@@ -1,0 +1,52 @@
+.hero {
+    position: relative;
+}
+
+.hero .video-container {
+    width: 100%;
+    height: 90vh;
+}
+
+.hero .video-container video {
+    width: 100%;
+    height: 100%;
+}
+
+.hero .video-info {
+    font-size: 1.2rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    bottom: 10rem;
+    left: 10rem;
+    color: #fff;
+}
+
+.hero .video-info .title {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+}
+
+.hero .video-info .date-duration-views {
+    display: flex;
+    gap: 2rem;
+}
+
+.hero .video-info .publisher {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero .video-info .publisher .img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.hero .video-info .publisher .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}

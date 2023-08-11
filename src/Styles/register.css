@@ -1,0 +1,79 @@
+.register {
+    display: flex;
+    position: absolute;
+    width: 70%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+    padding: 3rem;
+}
+
+.register .left {
+    position: relative;
+    flex: 1.2;
+}
+
+.register .left__title {
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    color: darkcyan;
+}
+
+.register .left__desc {
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    color: green;
+}
+
+.register .left__register {
+    font-size: 2rem;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    color: darkblue;
+}
+
+.register .right {
+    flex: 1;
+    text-align: center;
+}
+
+.register .right__title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.register .right__desc {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.register .form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.register .form input {
+    padding: 1rem;
+    border: none;
+    border-bottom: 1px solid #bbb;
+    outline: none;
+}
+
+.register .form .btn {
+    margin-top: 3rem;
+}
+
+.register .form .btn button {
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    padding: 1rem 4rem;
+    background-color: dodgerblue;
+    border-radius: 100px;
+    color: #fff;
+    cursor: pointer;
+}
