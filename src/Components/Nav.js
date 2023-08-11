@@ -1,24 +1,45 @@
-import React from 'react'
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
+import {useNavigate, useLocation} from 'react-router-dom';
+import '../Styles/Nav.css';
 
-export default function Nav() {
-  return (
-    <Navbar className="bg-body-tertiary">
-    <Container>
-      <Navbar.Brand href="#home">Tuner</Navbar.Brand>
-      <Navbar.Toggle />
-      <Navbar.Collapse className="justify-content-end">
-        <Navbar.Text>
-          Signed in as: <a href="#login"></a>
-        </Navbar.Text>
-      </Navbar.Collapse>
-    </Container>
-  </Navbar>
-    
-
-
-  )
+const Navbar = ({setSearchKeyword}) =>{
+    const location = useLocation();
+    const username = localStorage.getItem('username');
+    const navigate = useNavigate();
+    const signout = event =>{
+        localStorage.removeItem('username');
+        navigate('/');
+    }
+    return(
+        <nav className="nav">
+            <ul>
+                <li className="title" onClick={() => navigate('/')}>Tuner</li>
+                {
+                    location.pathname === '/' &&
+                    <li>
+                        <input type="search" name="search" onChange={event => setSearchKeyword(event.target.value)} id="search" placeholder="Search" />
+                    </li>
+                }
+                <li>
+                    {
+                        localStorage.getItem('username') ?
+                        <>
+                            <span onClick={() => navigate(`/user/${username}`)}>My Videos</span>
+                            <span>|</span>
+                            <span onClick={() => navigate('/upload')}>Upload</span>
+                            <span>|</span>
+                            <span onClick={signout}>Signout</span>
+                        </> :
+                        <>
+                            <span onClick={() => navigate('/register')}>Register</span>
+                            <span>|</span>
+                            <span onClick={() => navigate('/login')}>Login</span>
+                        </>
+                    }
+                    
+                </li>
+            </ul>
+        </nav>
+    )
 }
 
-  
+export default Navbar;
