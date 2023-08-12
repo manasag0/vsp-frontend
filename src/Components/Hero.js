@@ -1,30 +1,28 @@
+import React from 'react';
+import video from '../testing_videos/Godzilla vs. Kong – Official Trailer (1).mp4';
 
-const Hero=({Hero_video})=>{
-const {title,desc,videUrl,username,views,createdAt}=Hero_video
-return(
-    videUrl?
+const Hero = () => {
+  return (
     <div className="hero">
-        <div className="video-conatiner">
-            <video controls>
-                <source src={''}/>
-            </video>
-        </div>
-        <div className="video-info"><h1 className="title">
-            <span>{title}</span>
+      <video autoPlay loop muted className="background-video">
+        <source src={video} type="video/mp4" />
+      </video>
+      <div className="video-info">
+        <h1 className="title">
+          <span>Title</span>
         </h1>
-        <p className="desc">{desc}</p>
+        <p className="desc">Description</p>
         <p className="date-duration-view">
-            <span>{new Date().toDateString(createdAt)}</span>
-            <span>14 Minus</span>
-            <span>{views}Views</span>
+          <span>CreatedAt</span>
+          <span>14 Minutes</span>
+          <span>Views</span>
         </p>
         <div className="publisher">
-            <p className="username">{username}</p>
+          <p className="username">Username</p>
         </div>
-        </div>
-    </div>:
-    <h2>Loading</h2>
-)
+      </div>
+    </div>
+  );
+};
 
-}
 export default Hero;

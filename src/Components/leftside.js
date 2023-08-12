@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-const Leftside = ({text}) => {
+const Leftside = ({ text }) => {
   const navigate = useNavigate();
   return (
     <div className="left">
@@ -11,7 +11,7 @@ const Leftside = ({text}) => {
       </p>
       <p
         className="left_register"
-        onClick={() => navigator(text === "Register" ? "/register" : "/login")}
+        onClick={() => navigate(text === "Register" ? "/register" : "/login")}
       >
         {text}
       </p>

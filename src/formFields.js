@@ -25,14 +25,14 @@ const data = [
     },
     {
         type: 'password',
-        name: 'pwd',
-        value: 'pwd',
+        name: 'password',
+        value: 'password',
         placeholder: 'Password'
     },
     {
         type: 'password',
-        name: 'confirmpwd',
-        value: 'confirmpwd',
+        name: 'confirmpassword',
+        value: 'confirmpassword',
         placeholder: 'Confirm Password'
     }
 ]
