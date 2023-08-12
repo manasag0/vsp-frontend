@@ -1,4 +1,4 @@
-import Leftside from "../Components/Leftside";
+import Leftside from "../Components/leftside";
 import Right from "../Components/Right";
 import NavBar from "../Components/NavBar";
 

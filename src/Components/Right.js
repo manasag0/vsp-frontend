@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import data from "../formfields";
+import data from "../formFields";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 const initialState = {
