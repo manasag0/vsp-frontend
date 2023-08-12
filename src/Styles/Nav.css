@@ -1,0 +1,44 @@
+.nav {
+  background-color: #141414;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul {
+  display: flex;
+  padding: 1rem 3rem;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav li {
+  font-size: 1.6rem;
+}
+
+.nav li:first-child {
+  font-size: 3rem;
+  cursor: pointer;
+  color: rgb(128, 85, 124);
+}
+
+.nav li:last-child {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav li:last-child span:not(:nth-child(2)) {
+  cursor: pointer;
+  color: rgb(225, 228, 232);
+}
+
+.nav li input {
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  width: 50rem;
+  box-shadow: 0 0 1px 1px rgba(227, 224, 224, 0.894);
+  background-color: rgb(41, 40, 40);
+  font-family: "Roboto", sans-serif;
+}
