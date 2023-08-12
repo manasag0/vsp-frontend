@@ -1,11 +1,6 @@
-/* .hero {
+.hero {
     position: relative;
 }
-
- .hero .video-container {
-    width: 100%;
-    height: 90vh;
-} 
 
  .hero .video-container video {
     width: 100%;
@@ -29,28 +24,19 @@
     flex-direction: column;
     font-size: 3rem;
 }
-
+.desc {
+  font-size: 3rem;
+  margin-top: 8px;
+}
 .hero .video-info .date-duration-views {
     display: flex;
     gap: 2rem;
 }
 
-.hero .video-info .publisher {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+.username {
+  font-size: 14px;
+  
 }
-
-.hero .video-info .publisher .img {
-    width: 3rem;
-    height: 3rem;
-}
-
-.hero .video-info .publisher .img img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-} */
 
 /* Reset default margin and padding */
 * {
@@ -79,15 +65,63 @@
     object-fit: cover;
   }
   
+  .publisher {
+    margin-top: 10px;
+    display: flex;
+    align-items: center; 
+  }
+  
+  .publisher .img {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+
+  }
+  
+  .publisher .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+ 
+  .spacer {
+    margin-right: 15px; 
+  }
+
+
+
+
+
+
+/* .hero .video-info .publisher {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+} */
+
+/* .hero .video-info .publisher .img {
+    width: 3rem;
+    height: 3rem;
+} */
+
+/* .hero .video-info .publisher .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+} */
+
+
+
+/*   
   .video-info {
     position: relative;
     z-index: 1;
     padding: 20px;
-    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: rgba(0, 0, 0, 0.5);
     color: #ffffff;
-  }
+  } */
   
-  .title span {
+  /* .title span {
     font-size: 3rem;
     font-weight: bold;
   }
@@ -112,4 +146,4 @@
     font-size: 14px;
     font-style: italic;
   }
-  
+   */
