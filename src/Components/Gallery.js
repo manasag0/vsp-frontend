@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../Styles/gallery.css';
 
 const VideoCard =({_id,title,desc,videoURL,username,categories,views,visibility,createdAt})=>{
     const navigate = useNavigate();
@@ -9,7 +8,7 @@ const VideoCard =({_id,title,desc,videoURL,username,categories,views,visibility,
         videoURL ?
         <div className='card'>
             <video onClick={()=>navigate(`/video-stream/${_id}`)} >
-                <source src={`${videoURL.slice(8)}`} type="video/mp4" />
+                <source src={`http://localhost:4000/api/videos/video/${videoURL.slice(8)}`} type="video/mp4" />
             </video>
             <div className='video-info'>
                 <p className='title'>{title}</p>

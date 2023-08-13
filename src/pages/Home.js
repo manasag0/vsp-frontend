@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../Components/NavBar";
 import Hero from "../Components/Hero";
+import Gallery from '../Components/Gallery'
 import { useState,useEffect } from 'react';
 import axios from "axios";
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
       try{
         const response=await axios.get('http://localhost:4000/api/videos/');
         setfirstVideo(response.data[0]);
+        setAllVideo(response.data);
       }
       catch(error){
         console.log(error)
@@ -21,8 +23,9 @@ const Home = () => {
   }, []);
   return (
     <div className="home">
-      <NavBar/>
+      <NavBar setSearchKeyword={setsearchKeyword}/>
       <Hero firstVideo={firstVideo}/>
+      <Gallery allVideo={allVideo} searchKeyword={searchKeyword}/>
     </div>
   );
 };
