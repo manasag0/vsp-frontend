@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'poppins',sans-serif;
+}
 .gallery {
     padding: 5rem;
 }

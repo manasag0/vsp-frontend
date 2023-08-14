@@ -1,7 +1,8 @@
 import React from "react";
-import LeftSide from "../Components/leftside";
+import LeftSide from "../Components/Leftside";
 import Right from "../Components/Right";
 import NavBar from "../Components/NavBar";
+import '../Styles/register.css';
 
 const Register = () => {
   const data = {

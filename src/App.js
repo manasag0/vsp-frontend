@@ -6,6 +6,7 @@ import Register from './pages/Register';
 import Upload from './pages/Upload';
 import MainVideo from './Components/MainVideo';
 import ValidUserLanding from './pages/ValidUserLanding';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

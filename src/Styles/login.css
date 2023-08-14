@@ -1,5 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans&family=Poppins:wght@400;500&display=swap');
+
 /* *{
-    background-color: black;
+    background-color: darkgray;
 } */
 .login {
     display: flex;
@@ -10,6 +13,8 @@
     transform: translate(-50%, -50%);
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
     padding: 3rem;
+    
+    font-family: 'Poppins', sans-serif;
 }
 
 .login .left {
@@ -17,38 +22,43 @@
     flex: 1.2;
 }
 
-.login .left__title {
+.login .left_title {
     font-size: 6rem;
     margin-bottom: 2rem;
-    color: darkcyan;
+    color: rgb(128, 85, 124);
 }
 
-.login .left__desc {
+.login .left_desc {
     font-size: 3rem;
     display: flex;
     flex-direction: column;
     color: green;
 }
 
-.login .left__register {
+.login .left_register {
     font-size: 2rem;
     position: absolute;
     bottom: 0;
     cursor: pointer;
-    color: darkblue;
+    color:white;
+   
 }
 
 .login .right {
     flex: 1;
     text-align: center;
+    color: white;
 }
-
-.login .right__title {
+.login .right input{
+    background-color: #bbb;
+    font-size: 18px;
+}
+.login .right_title {
     font-size: 4rem;
     margin-bottom: 1rem;
 }
 
-.login .right__desc {
+.login .right_desc {
     font-size: 1.6rem;
     margin-bottom: 3rem;
 }
@@ -64,6 +74,7 @@
     border: none;
     border-bottom: 1px solid #bbb;
     outline: none;
+    border-radius: 6px;
 }
 
 .login .form .btn {
@@ -75,7 +86,7 @@
     outline: none;
     font-size: 1.6rem;
     padding: 1rem 4rem;
-    background-color: dodgerblue;
+    background-color: green;
     border-radius: 100px;
     color: #fff;
     cursor: pointer;

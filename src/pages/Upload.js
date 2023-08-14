@@ -49,16 +49,16 @@ const Upload = () =>{
         <form method="post" className="upload-form" onSubmit={onSubmitHandle}>
             <div className="upload">
                 <div className="video">
-                    <label htmlFor="upload-new-video">Upload New Video</label>
-                    <input onChange={handleVideoFileChange} name="video" type="file" accept="video/*" id="upload-new-video" />
+                    <label htmlFor="upload-new-video" className='uploadVideo'>Upload New Video</label>
+                    <input onChange={handleVideoFileChange} name="video" type="file" accept="video/*" className="upload-new-video" />
                 </div>
                 <div className="title">
-                    <label htmlFor="name">Name</label>
-                    <input onChange={handleTitleChange} type="text" name="title" />
+                    <label htmlFor="name" className='nameclass'>Name</label>
+                    <input onChange={handleTitleChange} type="text" name="title" className='nameinput' />
                 </div>
                 <div className="desc">
-                    <label htmlFor="desc">Description</label>
-                    <input onChange={handleDescChange} type="text" name="desc" />
+                    <label htmlFor="desc" className='desc-name'>Description</label>
+                    <textarea onChange={handleDescChange} type="text"  name="desc" />
                 </div>
                 <div className="category-and-visibility">
                     <div className="category">

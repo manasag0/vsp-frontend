@@ -1,38 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans&family=Poppins:wght@400;500&display=swap');
+ *{
+    margin: 0;
+ }
+ body{
+    box-sizing: border-box;
+    background-color: rgb(38, 38, 52);
+    
+ }
 .register {
     display: flex;
     position: absolute;
+    justify-content: center;
+    align-items: center;
     width: 70%;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
-    padding: 3rem;
+    padding: 1rem;
+    font-family: 'poppins',sans-serif;
+    color: white;
+}
+.register input{
+    border: 0;
+    border-radius: 5px;
+    background-color: #bbb;
+    font-size: 20px;
 }
 
 .register .left {
     position: relative;
     flex: 1.2;
+    /* justify-content: center; */
 }
 
-.register .left__title {
-    font-size: 6rem;
+.register .left_title {
+    font-size: 5rem;
     margin-bottom: 2rem;
-    color: darkcyan;
+    color: rgb(128, 85, 124);
 }
 
-.register .left__desc {
-    font-size: 3rem;
+.register .left_desc {
+    font-size: 2rem;
     display: flex;
     flex-direction: column;
     color: green;
 }
 
-.register .left__register {
+.register .left_register {
     font-size: 2rem;
-    position: absolute;
     bottom: 0;
     cursor: pointer;
-    color: darkblue;
+    
 }
 
 .register .right {
@@ -40,20 +59,22 @@
     text-align: center;
 }
 
-.register .right__title {
-    font-size: 4rem;
+.register .right_title {
+    font-size: 3rem;
     margin-bottom: 1rem;
+    margin-top: 0;
 }
 
-.register .right__desc {
-    font-size: 1.6rem;
-    margin-bottom: 3rem;
+.register .right_desc {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
 }
 
 .register .form {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .register .form input {
@@ -72,7 +93,7 @@
     outline: none;
     font-size: 1.6rem;
     padding: 1rem 4rem;
-    background-color: dodgerblue;
+    background-color: green;
     border-radius: 100px;
     color: #fff;
     cursor: pointer;

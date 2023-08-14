@@ -1,6 +1,7 @@
-import Leftside from "../Components/leftside";
+import Leftside from "../Components/Leftside";
 import Right from "../Components/Right";
 import NavBar from "../Components/NavBar";
+
 
 const Login = () => {
   const data = {

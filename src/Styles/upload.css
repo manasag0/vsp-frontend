@@ -1,33 +1,51 @@
 .upload-form {
     width: 40%;
     margin: 15rem auto;
+    color: #fff
 }
 
 .upload-form .upload {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     padding: 2rem;
     font-size: 1.6rem;
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.upload-form .upload .uploadVideo{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+.upload-form .upload .nameinput{
+    border: none;
+    border-radius: 6px;
 }
 
 .upload-form .upload > div {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    width: auto;
+}
+.upload-form .upload .nameclass{
+    font-size: 20px;
 }
 
 .upload-form .upload input:not(input[type="file"]) {
     border: none;
     outline: none;
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
-    padding: 1rem 2rem;
+    height: 30px;
+    width: auto;
 }
 
 .upload-form .upload .category-and-visibility {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    font-size: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-items: center;
     align-items: center;
 }
@@ -40,6 +58,7 @@
 
 .upload-form .upload .category-and-visibility select {
     border: none;
+    border-radius: 5px;
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
     padding: 0.5rem;
 }
@@ -52,9 +71,30 @@
 .upload-form .btn button {
     border: none;
     outline: none;
-    padding: 1rem 3rem;
+    padding: .5rem 2rem;
     border-radius: 100px;
-    background-color: darkcyan;
+    background-color: green;
     color: white;
     cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+}
+.upload .desc-name {
+    
+    font-size: 20px;
+}
+.upload-form  textarea{
+    width: 400px auto;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    resize: vertical;
+    text-align: left;
+    overflow: auto;
 }
